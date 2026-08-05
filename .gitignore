@@ -11,6 +11,7 @@ default-*.json
 mta_archives/
 *_mta_build_tmp
 *.mtar
+*.mta
 
 # Other
 .DS_Store
@@ -20,3 +21,7 @@ mta_archives/
 
 #IDE
 .vscode/
+
+#Node js
+package-lock.json
+.env
