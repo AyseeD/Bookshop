@@ -3,22 +3,25 @@ import cds from "@sap/cds";
 export class CatalogService extends cds.ApplicationService{
     init() {
         const {Books} = cds.entities ('sap.capire.bookshop');
+        const {ListOfBooks} = this.entities; 
 
-        //After READ handler on Book to add discount info
-        this.after ('READ', 'Books', results => results.forEach(book => {
+        //discount for overstocked books
+        this.after ('each', ListOfBooks, book => {
             if (book.stock > 111) book.title += ` -- 11% discount!`
-        }));
+        });
 
-        //action handler for submitOrder
+        //action handler for submitOrder, if available stock suffices reduce stock of ordered books
         this.on ('submitOrder', async req => {
-            let { book:id, quantity } = req.data
-            let affected = await UPDATE (Books,id)
+            let { book:id, quantity } = req.data;
+            if (quantity < 1) return req.error (400, `quantity has to be 1 or more`);
+            let succeeded = await UPDATE (Books,id)
             .with `stock = stock - ${quantity}`
-            .where `stock >= ${quantity}`
-            if (!affected) req.error `${quantity} exceeds stock for book #${id}`
+            .where `stock >= ${quantity}`;
+            if(succeeded.affected ?? succeeded) return;
+            else if (!this.exists(Books,id)) req.error (404, `Books #${id} does not exist`);
+            else req.error (409, `${quantity} exceeds stock for book #${id}`);
         })
 
         return super.init();
     }
-    
 }

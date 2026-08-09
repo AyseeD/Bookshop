@@ -4,3 +4,6 @@ service AdminService @(odata:'/admin') {
     entity Books as projection on my.Books;
     entity Genres as projection on my.Genres;
 }
+
+// Additionally serve via HCQL and REST
+annotate AdminService with @hcql @rest;

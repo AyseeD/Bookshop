@@ -1,28 +1,15 @@
 import cds from '@sap/cds'
 
 export class AdminService extends cds.ApplicationService { init() {
-
-  const { Authors, Books, Genres } = cds.entities('AdminService')
-
-  this.before (['CREATE', 'UPDATE'], Authors, async (req) => {
-    console.log('Before CREATE/UPDATE Authors', req.data)
-  })
-  this.after ('READ', Authors, async (authors, req) => {
-    console.log('After READ Authors', authors)
-  })
-  this.before (['CREATE', 'UPDATE'], Books, async (req) => {
-    console.log('Before CREATE/UPDATE Books', req.data)
-  })
-  this.after ('READ', Books, async (books, req) => {
-    console.log('After READ Books', books)
-  })
-  this.before (['CREATE', 'UPDATE'], Genres, async (req) => {
-    console.log('Before CREATE/UPDATE Genres', req.data)
-  })
-  this.after ('READ', Genres, async (genres, req) => {
-    console.log('After READ Genres', genres)
-  })
-
-
+  this.before (['NEW', 'CREATE'], 'Authors', genid)
+  this.before (['NEW', 'CREATE'], 'Books', genid)
+  
   return super.init()
 }}
+
+// sample gen (will be updated later as is not safe)
+async function genid (req) {
+  if(req.data.ID) return
+  const {id} = await SELECT.one.from(req.target).columns('max(ID) as id')
+  req.data.ID = id + 4
+}
