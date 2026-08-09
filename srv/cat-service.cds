@@ -9,7 +9,5 @@ service CatalogService @(odata:'/browse') {
     extend service CatalogService with {
         @requires: 'authenticated-user'
         action submitOrder ( book: Books:ID, quantity:Integer);
-
-        
     }
 }

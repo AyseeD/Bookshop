@@ -1,0 +1,4 @@
+cds:
+  requires:
+    "[production]":
+        auth: mocked
