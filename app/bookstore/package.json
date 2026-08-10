@@ -1,5 +1,5 @@
 {
-  "name": "bookstore",
+  "name": "booksample",
   "version": "1.0.0",
   "description": "The front end of the book shop sample project using ui5",
   "license": "ISC",
@@ -11,7 +11,11 @@
   },
   "private": true,
   "devDependencies": {
+    "@openui5/types": "^1.151.0",
     "@ui5/cli": "^4.0.61",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "ui5-middleware-livereload": "^3.4.0",
+    "ui5-middleware-serveframework": "^3.8.2",
+    "ui5-tooling-transpile": "^3.12.0"
   }
 }
