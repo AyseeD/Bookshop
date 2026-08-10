@@ -1,0 +1,10 @@
+{
+    "_version": "2.8.0",
+    "sap.app":{
+        "id": "bookshop.sample",
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        }
+    }
+}
