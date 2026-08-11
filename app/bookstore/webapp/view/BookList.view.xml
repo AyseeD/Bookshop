@@ -1,0 +1,11 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <List items="{/ListOfBooks}">
+        <StandardListItem 
+            title="{title}"
+            description="{author/name}"
+            info="{price} {currency}"
+        />
+    </List>
+</mvc:View>

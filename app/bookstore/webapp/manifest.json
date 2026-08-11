@@ -3,8 +3,74 @@
     "sap.app":{
         "id": "booksample",
         "type": "application",
+        "i18n": {
+            "bundleName": "booksample.i18n.i18n",
+            "supportedLocales": [
+                "en",
+                "de"
+            ],
+            "fallbackLocale": "en"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
         "applicationVersion": {
             "version": "1.0.0"
+        },
+        "dataSources": {
+            "catalog": {
+                "uri": "/browse/",
+                "type": "OData",
+                "settings":{
+                    "odataVersion": "4.0"
+                }
+            }
+        }
+    },
+    "sap.ui":{
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "contentDensities":{
+            "compact": true,
+            "cozy": true
+        },
+        "dependencies": {
+            "minUI5Version": "1.148",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        },
+        "rootView": {
+            "viewName": "booksample.view.App",
+            "type": "XML",
+            "id": "app"
+        },
+        "models": {
+            "": {
+                "dataSource": "catalog",
+                "settings":{
+                    "synchronizationMode": "None",
+                    "operationMode": "Server",
+                    "autoExpandSelect": true
+                }
+            },
+            "i18n":{
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName":"booksample.i18n.i18n",
+                    "supportedLocales": [
+                        "en",
+                        "de"
+                    ],
+                    "fallbackLocale": "en"
+                }
+            }
         }
     }
 }
