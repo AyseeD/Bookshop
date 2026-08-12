@@ -4,7 +4,7 @@
     <List items="{/ListOfBooks}">
         <StandardListItem 
             title="{title}"
-            description="{author/name}"
+            description="{author}"
             info="{price} {currency}"
         />
     </List>

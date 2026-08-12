@@ -2,8 +2,10 @@ using { sap.capire.bookshop as my } from '../db/schema';
 service CatalogService @(path:'/browse') {
 
     //for displaying of lists of Books
-    @readonly entity ListOfBooks as projection on Books{
-        *, currency.symbol as currency
+    @readonly entity ListOfBooks as projection on my.Books{
+        *, 
+        author.name as author,
+        currency.symbol as currency
     }
     excluding {descr};
 
