@@ -17,6 +17,8 @@ export default class Component extends UIComponent{
         const deviceModel = new JSONModel(Device);
         deviceModel.setDefaultBindingMode("OneWay");
         this.setModel(deviceModel, "device");
+
+        this.getRouter().initialize();
     }
 
     getContentDensityClass(): string {

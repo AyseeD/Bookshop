@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2026 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/core/Element","sap/ui/core/IconPool","./library"],function(e,t,a){"use strict";var i=e.extend("sap.ui.unified.ShellHeadUserItem",{metadata:{library:"sap.ui.unified",deprecated:true,properties:{username:{type:"string",group:"Appearance",defaultValue:""},showPopupIndicator:{type:"boolean",group:"Accessibility",defaultValue:true},image:{type:"sap.ui.core.URI",group:"Appearance",defaultValue:null}},associations:{ariaLabelledBy:{type:"sap.ui.core.Control",multiple:true,singularName:"ariaLabelledBy"}},events:{press:{}}}});t.insertFontFaceStyle();i.prototype.onclick=function(e){this.firePress();e.preventDefault()};i.prototype.onsapspace=i.prototype.onclick;i.prototype.onsapenter=i.prototype.onclick;i.prototype._checkAndAdaptWidth=function(e){if(!this.getDomRef()){return false}var t=this.$(),a=this.$("name");var i=t.width();t.toggleClass("sapUiUfdShellHeadUsrItmLimit",false);var r=240;if(e){r=Math.min(r,.5*document.documentElement.clientWidth-225)}if(r<a.width()){t.toggleClass("sapUiUfdShellHeadUsrItmLimit",true)}return i!=t.width()};return i});
+//# sourceMappingURL=ShellHeadUserItem.js.map

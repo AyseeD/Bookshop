@@ -1,0 +1,41 @@
+/* ================================== */
+/* CSS for control sap.ui.dt/Overlay  */
+/* Quartz Dark theme                  */
+/* ================================== */
+
+.sapUiDtOverlay {
+	--_sap_ui_dt_Overlay_CuttedBackgroundColor: ~'hsl(from var(--sapContent_ImagePlaceholderBackground) h s l / .5)';
+}
+
+.sapUiDtOverlayDropZone {
+
+	> .sapUiDtOverlayChildren {
+
+		> .sapUiDtOverlayMovable {
+			background: inherit;
+
+			&::before {
+				content: none;
+			}
+
+			&.sapUiDtOverlayHover {
+
+				&::after {
+					content: none;
+				}
+			}
+
+			&.sapUiDtOverlaySelected {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.sapUiDtOverlayTargetZone {
+
+	&::after {
+		transition: box-shadow .25s;
+		box-shadow: var(--_sap_ui_dt_Overlay_BoxShadow);
+	}
+}

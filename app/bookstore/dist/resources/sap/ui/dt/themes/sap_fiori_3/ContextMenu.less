@@ -1,0 +1,85 @@
+/* ====================================== */
+/* CSS for control sap.ui.dt/ContextMenu  */
+/* Quartz Light theme                     */
+/* ====================================== */
+
+.sapUiDtContextMenu {
+	--_sap_ui_dt_ContextMenu_MnuItemTextColor: var(--sapList_SelectionBorderColor);
+	--_sap_ui_dt_ContextMenu_MnuItemBackgroundColor: var(--sapList_Background);
+	--_sap_ui_dt_ContextMenu_MnuItemHoverBackgroundColor: var( --sapList_SelectionBackgroundColor);
+	--_sap_ui_dt_ContextMenu_BorderRadius: var(--sapButton_BorderCornerRadius);
+	--_sap_ui_dt_ContextMenu_MnuItemIconColor: var(--sapList_SelectionBorderColor);
+}
+
+.sapUiDtContextMenu.sapMMenu {
+
+	.sapMMenuList {
+
+		.sapMMenuItem {
+			color: var(--_sap_ui_dt_ContextMenu_MnuItemTextColor);
+
+			.sapMMenuItemIcon {
+				color: var(--_sap_ui_dt_ContextMenu_MnuItemTextColor);
+			}
+
+			.sapMMenuItemSubMenu > div::after,
+			.sapMMenuItem:hover .sapMMenuItemSubMenu > div::after {
+				color: var(--_sap_ui_dt_ContextMenu_MnuItemTextColor);
+			}
+
+			&:hover {
+				color: var(--_sap_ui_dt_ContextMenu_MnuItemTextColor);
+				background-color: var(--_sap_ui_dt_ContextMenu_MnuItemHoverBackgroundColor);
+
+				.sapMMenuItemIcon {
+					color: var(--_sap_ui_dt_ContextMenu_MnuItemTextColor);
+					background-color: var(--_sap_ui_dt_ContextMenu_MnuItemHoverBackgroundColor);
+				}
+
+				&.sapMMenuItemDisabled {
+					background-color: var(--_sap_ui_dt_ContextMenu_MnuItemBackgroundColor);
+
+					.sapMMenuItemIcon {
+						background-color: var(--_sap_ui_dt_ContextMenu_MnuItemBackgroundColor);
+					}
+				}
+			}
+
+			&:focus {
+				border-radius: var(--_sap_ui_dt_ContextMenu_BorderRadius);
+
+				&.sapMMenuItemDisabled {
+					outline: none;
+				}
+			}
+
+			&.sapUiDtContextMenuExtendedActionsTitle {
+
+				&:hover {
+					background-color: var(--_sap_ui_dt_ContextMenu_PrpgtedMnuItemBGColor);
+				}
+			}
+
+			&.sapUiDtContextMenuPropagatedControlTitle {
+
+				&:hover {
+					background-color: var(--_sap_ui_dt_ContextMenu_PrpgtedMnuItemBGColor);
+				}
+			}
+
+			&.sapUiDtContextMenuPropagatedItem {
+
+				.sapMMenuItemIcon {
+					background-color: var(--_sap_ui_dt_ContextMenu_PrpgtedMnuItemBGColor);
+				}
+
+				&:hover {
+
+					.sapMMenuItemIcon {
+						background-color: var(--_sap_ui_dt_ContextMenu_MnuItemHoverBackgroundColor) !important;
+					}
+				}
+			}
+		}
+	}
+}

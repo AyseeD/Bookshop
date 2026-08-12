@@ -1,0 +1,25 @@
+/* ======================================= */
+/* CSS for control sap.ui.rta/ContextMenu  */
+/* Quartz High Contrast White theme        */
+/* ======================================= */
+
+@_sap_ui_rta_ContextMenu_BorderLightColor: var(--sapShell_Background); /* #fff */
+@_sap_ui_rta_ContextMenu_BorderDarkColor: darken(@sapUiSelected, 40%); /* #0042c2 */
+@_sap_ui_rta_ContextMenu_BoxShadowColor: fade(@sapUiContentContrastShadowColor, 50%);
+
+.sapUiRtaMode .sapUiDtContextMenu.sapMMenu {
+	box-shadow: 0 0 1rem 0 @_sap_ui_rta_ContextMenu_BoxShadowColor, 0 0 0 0.125rem @_sap_ui_rta_ContextMenu_BorderLightColor;
+
+	.sapMMenuList {
+
+		.sapMMenuItem {
+
+			&:focus {
+
+				&.sapMMenuItemDisabled {
+					outline: none;
+				}
+			}
+		}
+	}
+}

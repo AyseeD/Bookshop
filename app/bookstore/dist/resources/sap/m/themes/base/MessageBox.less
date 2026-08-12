@@ -1,0 +1,64 @@
+/* ================================= */
+/* CSS for control sap.m/MessageBox  */
+/* Base theme                        */
+/* ================================= */
+
+/* header shadow - different states */
+@_sap_m_MessageBox_InformationShadow: var(--sapContent_Information_HeaderShadow);
+@_sap_m_MessageBox_WarningShadow: var(--sapContent_Warning_HeaderShadow);
+@_sap_m_MessageBox_ErrorShadow: var(--sapContent_Error_HeaderShadow);
+@_sap_m_MessageBox_SuccessShadow: var(--sapContent_Success_HeaderShadow);
+@_sap_m_MessageBox_QuestionShadow: var(--sapContent_HeaderShadow);
+
+.sapMMessageBoxLinkText {
+	vertical-align: bottom;
+}
+
+.sapMMessageBoxLinkText,
+.sapMMessageBoxErrorText,
+.sapMMessageBoxDetails {
+	margin-top: 1rem;
+}
+
+.sapMDialog.sapMMessageBoxInfo .sapMDialogIcon.sapUiIcon {
+	color: var(--sapNeutralElementColor);
+}
+
+.sapMDialog.sapMMessageBoxWarning .sapMDialogIcon.sapUiIcon {
+	color: var(--sapCriticalElementColor);
+}
+
+.sapMDialog.sapMMessageBoxError .sapMDialogIcon.sapUiIcon {
+	color: var(--sapNegativeElementColor);
+}
+
+.sapMDialog.sapMMessageBoxSuccess .sapMDialogIcon.sapUiIcon {
+	color: var(--sapPositiveElementColor);
+}
+
+.sapMDialog.sapMMessageBoxQuestion .sapMDialogIcon.sapUiIcon {
+	color: var(--sapNeutralElementColor);
+}
+
+.sapMDialog.sapMMessageDialog {
+
+	&.sapMMessageBoxInfo .sapMDialogTitleGroup > .sapMBar {
+		box-shadow: @_sap_m_MessageBox_InformationShadow;
+	}
+
+	&.sapMMessageBoxWarning .sapMDialogTitleGroup > .sapMBar {
+		box-shadow: @_sap_m_MessageBox_WarningShadow;
+	}
+
+	&.sapMMessageBoxError .sapMDialogTitleGroup > .sapMBar {
+		box-shadow: @_sap_m_MessageBox_ErrorShadow;
+	}
+
+	&.sapMMessageBoxSuccess .sapMDialogTitleGroup > .sapMBar {
+		box-shadow: @_sap_m_MessageBox_SuccessShadow;
+	}
+
+	&.sapMMessageBoxQuestion .sapMDialogTitleGroup > .sapMBar {
+		box-shadow: @_sap_m_MessageBox_QuestionShadow;
+	}
+}

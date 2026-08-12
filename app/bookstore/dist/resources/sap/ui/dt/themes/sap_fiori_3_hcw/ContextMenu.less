@@ -1,0 +1,31 @@
+/* ====================================== */
+/* CSS for control sap.ui.dt/ContextMenu  */
+/* Quartz High Contrast White theme       */
+/* ====================================== */
+
+.sapUiDtContextMenu {
+	--_sap_ui_dt_ContextMenu_BorderRadius: var(--sapButton_BorderCornerRadius);
+	--_sap_ui_dt_ContextMenu_OpenSubMenuBackgroundColor: var(--sapButton_Selected_Background);
+}
+
+.sapUiDtContextMenu.sapMMenu {
+
+	.sapMMenuList {
+
+		.sapMMenuItem {
+
+			&:focus {
+				border-radius: var(--_sap_ui_dt_ContextMenu_BorderRadius);
+			}
+
+			&.sapMMenuItemSubMenuOpen {
+				border-bottom: 0.0625rem solid transparent !important;
+				border-radius: var(--_sap_ui_dt_ContextMenu_BorderRadius);
+
+				&:not(:hover) {
+					background-color: var(--_sap_ui_dt_ContextMenu_OpenSubMenuBackgroundColor);
+				}
+			}
+		}
+	}
+}

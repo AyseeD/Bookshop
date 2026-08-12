@@ -4,7 +4,6 @@
     displayBlock="true">
     <Shell>
         <App class="myAppBS" id="app">
-            <mvc:XMLView viewName="booksample.view.BookList" />
         </App>
     </Shell>
 </mvc:View>
