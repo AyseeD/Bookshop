@@ -71,6 +71,13 @@
                     "fallbackLocale": "en"
                 }
             }
+        },
+        "resources":{
+            "css": [
+                {
+                    "uri": "css/styles.css"
+                }
+            ]
         }
     }
 }

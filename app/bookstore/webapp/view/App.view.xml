@@ -3,7 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true">
     <Shell>
-        <App id="app">
+        <App class="myAppBS" id="app">
             <mvc:XMLView viewName="booksample.view.BookList" />
         </App>
     </Shell>

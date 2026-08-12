@@ -1,0 +1,7 @@
+html[dir="ltr"] .myAppBS .myCustomButton.sapMBtn{ /*Left to right*/
+    margin-right: 0.125rem
+}
+
+html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
+    margin-right: 0.125rem
+}
