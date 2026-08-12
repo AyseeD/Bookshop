@@ -3,7 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     >
-    <Page title="{i18n>appTitle}">
+    <Page showHeader="false">
         <landmarkInfo>
             <PageAccessibleLandmarkInfo
                 rootRole="Region"
@@ -15,6 +15,7 @@
             />
         </landmarkInfo>
         <content>
+            <mvc:XMLView viewName="booksample.view.Header" />
             <mvc:XMLView viewName="booksample.view.BookList" />
         </content>
     </Page>

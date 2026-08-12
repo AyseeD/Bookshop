@@ -1,0 +1,50 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <FlexBox class="bookHeader" alignItems="Center" accesibleRole="Banner">
+        <HBox class="headerLeft" alignItems="Center">
+            <Button 
+                id="headerMenuButton"
+                icon="sap-icon://menu2"
+            />
+
+            <Button 
+                id="headerCollection"
+                text="{i18n>CollectionText}"
+                class="headerTextNav"
+            />
+
+            <Button 
+                id="headerTopSelling"
+                text="{i18n>TopSellingText}"
+                class="headerTextNav"
+            />
+
+            <Button 
+                id="headerSearchButton"
+                icon="sap-icon://search"
+            />
+        </HBox>
+
+        <HBox class="headerCenter" justifyContent="Center">
+            <Text id="headerLogoText" text="{i18n>LogoText}"/>
+        </HBox>
+
+        <HBox class="headerRight" alignItems="Center" justifyContent="End">
+            <Button 
+                id="headerAccountButton"
+                icon="sap-icon://person-placeholder"
+            />
+
+            <Button 
+                id="headerCreateAccount"
+                text="{i18n>CreateAccountText}"
+            />
+
+            <Button 
+                id="headerCartButton"
+                icon="sap-icon://cart"
+            />
+        </HBox>
+    </FlexBox>
+</mvc:View>

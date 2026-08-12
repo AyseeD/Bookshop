@@ -5,3 +5,33 @@ html[dir="ltr"] .myAppBS .myCustomButton.sapMBtn{ /*Left to right*/
 html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
     margin-right: 0.125rem
 }
+
+/*Header style*/
+.bookHeader {
+    display: flex;
+    align-items: center;
+    min-height: 6rem;
+    padding: 0 1.5rem;
+}
+
+.headerLeft, .headerRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.headerRight{
+    justify-content: flex-end;
+}
+
+.headerTextNav .sapMBtnInner {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
