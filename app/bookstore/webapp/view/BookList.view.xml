@@ -6,6 +6,6 @@
             title="{title}"
             description="{author}"
             info="{price} {currency}"
-        />
+            icon="{image}"/>
     </List>
 </mvc:View>

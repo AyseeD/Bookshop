@@ -21,6 +21,7 @@ entity Books : managed {
     stock: Integer;
     price: Price;
     currency: Currency;
+    image: String;
 }
 
 entity Genres : cuid, sap.common.CodeList {
