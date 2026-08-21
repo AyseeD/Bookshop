@@ -16,6 +16,7 @@
         </landmarkInfo>
         <content>
             <mvc:XMLView viewName="booksample.view.Header" />
+            <mvc:XMLView viewName="booksample.view.Promotion" />
             <mvc:XMLView viewName="booksample.view.BookList" />
         </content>
     </Page>

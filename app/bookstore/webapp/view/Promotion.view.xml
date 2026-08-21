@@ -2,5 +2,42 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
 >
-    
+    <FlexBox class="promotion" alignItems="Center" accessibleRole="Region">
+        <!--Left Side-->
+        <VBox class="promotionLeft" >
+            <Image src="images/eleonora.jpeg"/>
+        </VBox>
+
+        <!--Right Side-->
+        <VBox class="promotionRight">
+            <Title text="{/Books(252)/title}" class="promotionTitle" />
+
+            <HBox class="promotionBookDetails">
+                <VBox>
+                    <Text text="Author" class="promotionDetailTitles"/>
+                    <Text text="{/Books(252)/author}"/>
+                </VBox>
+
+                <VBox>
+                    <Text text="Genre" class="promotionDetailTitles" />
+                    <Text text="{/Books(252)/genre}"/>
+                </VBox>
+
+                <VBox>
+                    <Text text="Stock" class="promotionDetailTitles" />
+                    <Text text="{/Books(252)/stock}"/>
+                </VBox>
+            </HBox>
+
+            <HBox class="promotionBookRating">
+                <RatingIndicator id="promotionRating" displayOnly="true" maxValue="5" value="4.1" iconSize="24px" /> 
+                <Label text="4.1 / 5000 {i18n>PromotionRating}" labelFor="promotionRating"/>
+            </HBox>
+
+            <HBox class="promotionPayment">
+                <Text class="promotionPaymentText" text="{/Books(252)/currency}{/Books(252)/price}" />
+                <Button icon="sap-icon://cart-4" text="{i18n>PromotionButton}"/>
+            </HBox>
+        </VBox>
+    </FlexBox>
 </mvc:View>

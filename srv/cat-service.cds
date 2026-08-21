@@ -14,6 +14,7 @@ service CatalogService @(path:'/browse') {
         *, //all fields with following denormalizations:
         author.name as author,
         genre.name as genre,
+        currency.symbol as currency
     } excluding {createdBy, modifiedBy};
 
     @requires: 'authenticated-user'

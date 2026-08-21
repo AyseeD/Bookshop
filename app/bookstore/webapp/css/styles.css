@@ -12,6 +12,7 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
     align-items: center;
     min-height: 6rem;
     padding: 0 1.5rem;
+    background-color: white;
 }
 
 .headerLeft, .headerRight {
@@ -34,4 +35,56 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
     border: none;
     background: transparent;
     box-shadow: none;
+}
+
+/*Promotion style*/
+.promotion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    gap: 3rem;
+}
+
+.promotionLeft .promotionRight{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.promotionRight{
+    gap: 20px;
+}
+
+.promotionTitle{
+    font-size: 55px;
+    font-family:cursive;
+}
+
+.promotionBookDetails, .promotionPayment, .promotionBookRating{
+    display: flex;
+    align-items: center;
+}
+
+.promotionBookRating{
+    gap: 1rem;
+}
+
+.promotionBookDetails{
+    gap: 2rem;
+}
+
+.promotionDetailTitles{
+    font-weight: bolder;
+}
+
+.promotionPayment{
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.promotionPaymentText{
+    font-size: 20px;
+    font-weight: bold;
 }
