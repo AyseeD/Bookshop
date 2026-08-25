@@ -27,7 +27,7 @@ entity Books : managed {
 entity Genres : cuid, sap.common.CodeList {
     parent: Association to Genres;
     children: Composition of many Genres on children.parent = $self;
-
+    icon: String
 }
 
 type Price : Decimal(9,2);

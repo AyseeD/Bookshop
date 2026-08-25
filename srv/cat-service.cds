@@ -17,6 +17,11 @@ service CatalogService @(path:'/browse') {
         currency.symbol as currency
     } excluding {createdBy, modifiedBy};
 
+    //for listing the genres
+    @readonly entity ListOfGenres as projection on my.Genres{
+        *
+    }excluding{parent, children};
+
     @requires: 'authenticated-user'
     action submitOrder ( book: Books:ID, quantity:Integer);
 }
