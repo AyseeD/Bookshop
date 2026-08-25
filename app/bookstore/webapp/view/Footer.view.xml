@@ -1,0 +1,22 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <FlexBox class="footer"  alignItems="Center" accessibleRole="Banner">
+        <HBox class="footerContent"  justifyContent="Center">
+            <VBox class="footerLeft">
+                <Text text="{i18n>FooterAddressTitle}" class="footerDetailTitles"/>
+                <Text text="{i18n>FooterAddress}"/>
+            </VBox>
+
+            <VBox class="footerCenter">
+                <Text text="{i18n>FooterContactTitle}" class="footerDetailTitles" />
+                <Text text="{i18n>FooterContact}"/>
+            </VBox>
+
+            <VBox class="footerRight">
+                <Text text="{i18n>FooterInfoTitle}" class="footerDetailTitles" />
+                <Text text="{i18n>FooterInfo}"/>
+            </VBox>
+        </HBox>
+    </FlexBox>
+</mvc:View>

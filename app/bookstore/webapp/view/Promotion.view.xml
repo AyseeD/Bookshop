@@ -14,17 +14,17 @@
 
             <HBox class="promotionBookDetails">
                 <VBox>
-                    <Text text="Author" class="promotionDetailTitles"/>
+                    <Text text="{i18n>PromotionAuthor}" class="promotionDetailTitles"/>
                     <Text text="{/Books(252)/author}"/>
                 </VBox>
 
                 <VBox>
-                    <Text text="Genre" class="promotionDetailTitles" />
+                    <Text text="{i18n>PromotionGenre}" class="promotionDetailTitles" />
                     <Text text="{/Books(252)/genre}"/>
                 </VBox>
 
                 <VBox>
-                    <Text text="Stock" class="promotionDetailTitles" />
+                    <Text text="{i18n>PromotionStock}" class="promotionDetailTitles" />
                     <Text text="{/Books(252)/stock}"/>
                 </VBox>
             </HBox>

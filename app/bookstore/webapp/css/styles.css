@@ -127,3 +127,24 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
 .adImg{
     border-radius: 20px;
 }
+
+/*Footer Style*/
+.footerContent{
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.footerLeft, .footerRight{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.footerDetailTitles{
+    font-weight: bolder;
+}

@@ -20,6 +20,7 @@
             <mvc:XMLView viewName="booksample.view.GenreList" />
             <mvc:XMLView viewName="booksample.view.BookList" />
             <mvc:XMLView viewName="booksample.view.Ad" />
+            <mvc:XMLView viewName="booksample.view.Footer" />
         </content>
     </Page>
 </mvc:View>
