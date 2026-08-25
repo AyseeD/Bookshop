@@ -5,8 +5,9 @@
     xmlns:cards="sap.f.cards"
     >
     <Carousel
-        id="genreCarousel"
+        class="genreCarousel"
         pages="{/ListOfGenres}"
+        showPageIndicator="false"
         >
         <customLayout>
             <CarouselLayout visiblePagesCount="6" />

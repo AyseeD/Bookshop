@@ -19,6 +19,7 @@
             <mvc:XMLView viewName="booksample.view.Promotion" />
             <mvc:XMLView viewName="booksample.view.GenreList" />
             <mvc:XMLView viewName="booksample.view.BookList" />
+            <mvc:XMLView viewName="booksample.view.Ad" />
         </content>
     </Page>
 </mvc:View>

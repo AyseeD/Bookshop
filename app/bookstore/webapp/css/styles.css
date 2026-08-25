@@ -88,3 +88,42 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
     font-size: 20px;
     font-weight: bold;
 }
+
+/*Ad Style*/
+.adBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: #5a7da0;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.adLeft, .adRight{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.adLeft{
+    gap: 1rem;
+}
+
+.adText{
+    color: white;
+}
+
+.adTitle{
+    font-size: 45px;
+}
+
+.adEmail{
+    gap: 1rem;
+}
+
+.adImg{
+    border-radius: 20px;
+}

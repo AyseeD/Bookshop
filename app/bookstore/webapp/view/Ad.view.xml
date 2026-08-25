@@ -1,0 +1,22 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    >
+    <FlexBox class="adBox" alignItems="Center" accessibleRole="Banner">
+        <!--Left Side-->
+        <VBox class="adLeft">
+            <Title class="adText adTitle" text="{i18n>AdTitle}" />
+            <Text class="adText" text="{i18n>AdText}"/>
+            
+            <HBox class="adEmail">
+                <Input  type="email" placeholder="jane.doe@mail.com"/>
+                <Button icon="sap-icon://arrow-right" text="subscribe" />
+            </HBox>
+        </VBox>
+
+        <!--Right Side-->
+        <VBox class="adRight">
+            <Image class="adImg" src="/images/theraven.jpg" height="300px"/>
+        </VBox>
+    </FlexBox>
+</mvc:View>
