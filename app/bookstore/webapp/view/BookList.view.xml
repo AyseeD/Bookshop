@@ -1,7 +1,7 @@
 <mvc:View
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <List items="{/ListOfBooks}">
+    <List class="bookList" items="{/ListOfBooks}">
         <StandardListItem 
             title="{title}"
             description="{author}"

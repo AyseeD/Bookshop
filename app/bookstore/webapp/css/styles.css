@@ -6,6 +6,11 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
     margin-right: 0.125rem
 }
 
+/*Book List style*/
+.bookList{
+    min-height: 360px;
+}
+
 /*Header style*/
 .bookHeader {
     display: flex;
@@ -106,6 +111,7 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
     align-items: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    min-width: 18rem;
 }
 
 .adLeft{
