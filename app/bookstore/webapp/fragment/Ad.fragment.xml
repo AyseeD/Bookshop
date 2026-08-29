@@ -1,6 +1,6 @@
-<mvc:View
+<core:FragmentDefinition
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
     >
     <FlexBox class="adBox" alignItems="Center" accessibleRole="Banner" wrap="Wrap" >
         <!--Left Side-->
@@ -19,4 +19,4 @@
             <Image class="adImg" src="/images/theraven.jpg" height="300px"/>
         </VBox>
     </FlexBox>
-</mvc:View>
+</core:FragmentDefinition>

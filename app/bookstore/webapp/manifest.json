@@ -56,7 +56,6 @@
             "": {
                 "dataSource": "catalog",
                 "settings":{
-                    "synchronizationMode": "None",
                     "operationMode": "Server",
                     "autoExpandSelect": true
                 }

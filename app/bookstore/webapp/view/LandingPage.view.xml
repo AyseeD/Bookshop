@@ -1,6 +1,7 @@
 <mvc:View
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
     displayBlock="true"
     >
     <Page showHeader="false">
@@ -15,12 +16,12 @@
             />
         </landmarkInfo>
         <content>
-            <mvc:XMLView viewName="booksample.view.Header" />
+            <core:Fragment fragmentName="booksample.fragment.Header" type="XML" />
             <mvc:XMLView viewName="booksample.view.Promotion" />
             <mvc:XMLView viewName="booksample.view.GenreList" />
             <mvc:XMLView viewName="booksample.view.BookList" />
-            <mvc:XMLView viewName="booksample.view.Ad" />
-            <mvc:XMLView viewName="booksample.view.Footer" />
+            <core:Fragment fragmentName="booksample.fragment.Ad" type="XML"/>
+            <core:Fragment fragmentName="booksample.fragment.Footer" type="XML"/>
         </content>
     </Page>
 </mvc:View>
