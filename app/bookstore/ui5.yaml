@@ -6,9 +6,10 @@ framework:
   name: OpenUI5
   version: "1.151.0"
   libraries:
-    - name: sap.m
-    - name: sap.ui.core
     - name: sap.f
+    - name: sap.m
+    - name: sap.tnt
+    - name: sap.ui.core
     - name: themelib_sap_fiori_3
 server:
   customMiddleware:

@@ -1,10 +1,11 @@
 <mvc:View
+    controllerName="booksample.controller.LandingPage"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     displayBlock="true"
     >
-    <Page showHeader="false">
+    <Page class="landingPage" showHeader="false">
         <landmarkInfo>
             <PageAccessibleLandmarkInfo
                 rootRole="Region"
@@ -17,6 +18,7 @@
         </landmarkInfo>
         <content>
             <core:Fragment fragmentName="booksample.fragment.Header" type="XML" />
+            <core:Fragment fragmentName="booksample.fragment.SideBar" type="XML" />
             <mvc:XMLView viewName="booksample.view.Promotion" />
             <mvc:XMLView viewName="booksample.view.GenreList" />
             <mvc:XMLView viewName="booksample.view.BookList" />

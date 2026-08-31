@@ -9,7 +9,7 @@
             <Text class="adText" text="{i18n>AdText}"/>
             
             <HBox class="adEmail">
-                <Input  type="email" placeholder="jane.doe@mail.com"/>
+                <Input placeholder="jane.doe@mail.com"/>
                 <Button icon="sap-icon://arrow-right" text="{i18n>AdButton}" />
             </HBox>
         </VBox>

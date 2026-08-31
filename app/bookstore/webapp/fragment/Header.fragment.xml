@@ -6,6 +6,7 @@
             <Button 
                 id="headerMenuButton"
                 icon="sap-icon://menu2"
+                press=".onMenuPress"
             />
 
             <Button 

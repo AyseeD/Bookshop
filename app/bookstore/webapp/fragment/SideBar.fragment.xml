@@ -1,0 +1,22 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:tnt="sap.tnt"
+    height="100%">
+    <VBox id="sideNav" class="sideNav" renderType="Bare" alignItems="Start" height="90%" visible="false">
+        <tnt:SideNavigation>
+            <tnt:NavigationList>
+                <tnt:NavigationListGroup text="Genres" items="{/ListOfGenres}">
+                    <tnt:NavigationListItem text="{name}" icon="{icon}" />
+                </tnt:NavigationListGroup>
+            </tnt:NavigationList>
+
+            <tnt:fixedItem>
+                <tnt:NavigationList>
+                    <tnt:NavigationListItem text="Settings" icon="sap-icon://action-settings" />
+                    <tnt:NavigationListItem text="Account Info" icon="sap-icon://account" />
+                </tnt:NavigationList>
+            </tnt:fixedItem>
+        </tnt:SideNavigation>
+    </VBox>
+</core:FragmentDefinition>
