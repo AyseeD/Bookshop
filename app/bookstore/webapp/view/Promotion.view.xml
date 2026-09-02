@@ -2,7 +2,7 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
 >
-    <FlexBox class="promotion" alignItems="Center" accessibleRole="Region">
+    <FlexBox class="promotion" alignItems="Center">
         <!--Left Side-->
         <VBox class="promotionLeft" >
             <Image src="images/eleonora.jpeg"/>

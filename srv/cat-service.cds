@@ -20,7 +20,7 @@ service CatalogService @(path:'/browse') {
     //for listing the genres
     @readonly entity ListOfGenres as projection on my.Genres{
         *
-    }excluding{parent, children};
+    };
 
     @requires: 'authenticated-user'
     action submitOrder ( book: Books:ID, quantity:Integer);

@@ -1,7 +1,7 @@
 {
   "name": "Booksample",
   "version": "1.0.0",
-  "description": "A Bookshop example for CAP development learninf",
+  "description": "A Bookshop example for CAP development learning",
   "type": "module",
   "files": [
     "app",

@@ -2,7 +2,7 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
     >
-    <FlexBox class="adBox" alignItems="Center" accessibleRole="Banner" wrap="Wrap" >
+    <FlexBox class="adBox" alignItems="Center" wrap="Wrap" >
         <!--Left Side-->
         <VBox class="adLeft">
             <Title class="adText adTitle" text="{i18n>AdTitle}" wrapping="true" />

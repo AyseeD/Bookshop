@@ -17,7 +17,7 @@
             />
         </landmarkInfo>
         <content>
-            <core:Fragment fragmentName="booksample.fragment.Header" type="XML" />
+            <core:Fragment fragmentName="booksample.fragment.Header" type="XML"/>
             <core:Fragment fragmentName="booksample.fragment.SideBar" type="XML" />
             <mvc:XMLView viewName="booksample.view.Promotion" />
             <mvc:XMLView viewName="booksample.view.GenreList" />

@@ -1,7 +1,7 @@
 <core:FragmentDefinition
     xmlns="sap.m"
     xmlns:core="sap.ui.core">
-    <FlexBox class="footer"  alignItems="Center" accessibleRole="Banner">
+    <FlexBox class="footer"  alignItems="Center">
         <HBox class="footerContent"  justifyContent="Center">
             <VBox class="footerLeft">
                 <Text text="{i18n>FooterAddressTitle}" class="footerDetailTitles"/>
