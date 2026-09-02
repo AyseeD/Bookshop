@@ -1,4 +1,4 @@
-sap.ui.define(["sap/ui/core/mvc/Controller", "sap/tnt/NavigationListItem"], function (Controller, NavigationListItem){
+sap.ui.define(["sap/ui/core/mvc/Controller", "sap/tnt/NavigationListItem", "sap/ui/core/UIComponent"], function (Controller, NavigationListItem, UIComponent){
     "use strict";
 
     return Controller.extend("booksample.controller.LandingPage", {
@@ -13,6 +13,12 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/tnt/NavigationListItem"], func
                 bVisible = oSideNav.getVisible();
 
             oSideNav.setVisible(!bVisible);
+        },
+
+        /**Navigate to the SignUp page */
+        onAccountPress(){
+            const router = UIComponent.getRouterFor(this);
+            router.navTo("signUp");
         },
 
         /**

@@ -33,13 +33,9 @@
 
         <HBox class="headerRight" alignItems="Center" justifyContent="End">
             <Button 
-                id="headerAccountButton"
-                icon="sap-icon://person-placeholder"
-            />
-
-            <Button 
                 id="headerCreateAccount"
                 text="{i18n>CreateAccountText}"
+                press=".onAccountPress"
             />
 
             <Button 

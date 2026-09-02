@@ -19,7 +19,7 @@
         <content>
             <core:Fragment fragmentName="booksample.fragment.Header" type="XML"/>
             <core:Fragment fragmentName="booksample.fragment.SideBar" type="XML" />
-            <mvc:XMLView viewName="booksample.view.Promotion" />
+            <core:Fragment fragmentName="booksample.fragment.Promotion" type="XML"/>
             <mvc:XMLView viewName="booksample.view.GenreList" />
             <mvc:XMLView viewName="booksample.view.BookList" />
             <core:Fragment fragmentName="booksample.fragment.Ad" type="XML"/>

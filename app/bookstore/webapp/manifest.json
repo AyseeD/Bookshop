@@ -94,12 +94,21 @@
                     "pattern": "",
                     "name": "landingPage",
                     "target": "landingPage"
+                },
+                {
+                    "pattern": "signup",
+                    "name": "signUp",
+                    "target": "signUp"
                 }
             ],
             "targets": {
                 "landingPage": {
                     "id": "landingPage",
                     "name": "LandingPage"
+                },
+                "signUp":{
+                    "id": "signUp",
+                    "name": "signUp"
                 }
             }
         }
