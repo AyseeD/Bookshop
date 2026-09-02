@@ -5,7 +5,7 @@
     <FlexBox class="adBox" alignItems="Center" accessibleRole="Banner" wrap="Wrap" >
         <!--Left Side-->
         <VBox class="adLeft">
-            <Title class="adText adTitle" text="{i18n>AdTitle}" />
+            <Title class="adText adTitle" text="{i18n>AdTitle}" wrapping="true" />
             <Text class="adText" text="{i18n>AdText}"/>
             
             <HBox class="adEmail">
@@ -16,7 +16,7 @@
 
         <!--Right Side-->
         <VBox class="adRight">
-            <Image class="adImg" src="/images/theraven.jpg" height="300px"/>
+            <Image class="adImg" src="{/Books(251)/image}" height="300px"/>
         </VBox>
     </FlexBox>
 </core:FragmentDefinition>
