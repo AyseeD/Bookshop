@@ -82,9 +82,6 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/tnt/NavigationListItem"], func
             aRootGenres.forEach(function (oGenre){
                 oNavList.addItem(createGenreItem(oGenre));
             }.bind(this));
-
-            console.log("Children map:", oChildrenMap);
-console.log("Root genres:", aRootGenres);
         }
     });
 });
