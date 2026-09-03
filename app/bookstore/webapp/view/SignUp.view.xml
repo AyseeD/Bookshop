@@ -1,5 +1,34 @@
 <mvc:View
+    controllerName="booksample.controller.SignUp"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
-    <Text text="Hi" />
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:form="sap.ui.layout.form">
+    <FlexBox justifyContent="Center" alignItems="Center" height="100%">
+        <VBox class="signUpFormBox" backgroundDesign="Solid">
+            <form:SimpleForm class="signUpForm" id="signUpForm"
+                editable="true"
+                singleContainerFullSize="false"
+                ariaLabelledBy="signupTitle">
+                    <form:toolbar>
+                        <Toolbar id="signupToolbar">
+                            <Title id="signupTitle" text="Sign Up"/>
+                        </Toolbar>
+                    </form:toolbar>
+
+                    <form:content>
+                        <Label text="User Name" />
+                        <Input placeholder="JaneD123" />
+                        <Label text="First and Last Name" />
+                        <Input placeholder="Name"/>
+                        <Input placeholder="Last" />
+
+                        <Label text="Password" />
+                        <Input placeholder="******"/>
+                        <Input placeholder="****** (Confirm)" />
+                    </form:content>
+                </form:SimpleForm>
+                <Button  class="signupButton sapUiResponsiveMargin" text="Sign Up"      accessibleRole="Link" icon="sap-icon://arrow-right" iconFirst="false" press=".onSignUpClick"
+                />
+        </VBox>
+    </FlexBox>
 </mvc:View>

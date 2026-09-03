@@ -167,3 +167,12 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
     left: 0;
     z-index: 9999;
 }
+
+/*Sign Up Style*/
+.signUpFormBox{
+    border-radius: 20px;
+}
+
+.signupButton{
+   align-self: flex-end;
+}
