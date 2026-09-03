@@ -1,7 +1,7 @@
-sap.ui.define(["sap/ui/core/mvc/Controller", "sap/tnt/NavigationListItem", "sap/ui/core/UIComponent"], function (Controller, NavigationListItem, UIComponent){
+sap.ui.define(["booksample/controller/BaseController", "sap/tnt/NavigationListItem"], function (BaseController, NavigationListItem){
     "use strict";
 
-    return Controller.extend("booksample.controller.LandingPage", {
+    const LandingPage = BaseController.extend("booksample.controller.LandingPage", {
         onInit(){
             this._loadGenres();
         },
@@ -17,7 +17,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/tnt/NavigationListItem", "sap/
 
         /**Navigate to the SignUp page */
         onAccountPress(){
-            const router = UIComponent.getRouterFor(this);
+            const router = this.getRouter();
             router.navTo("signUp");
         },
 
@@ -90,4 +90,6 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/tnt/NavigationListItem", "sap/
             }.bind(this));
         }
     });
+
+    return LandingPage;
 });

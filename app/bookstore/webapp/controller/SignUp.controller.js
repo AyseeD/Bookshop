@@ -1,10 +1,12 @@
-sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/UIComponent"], function (Controller, UIComponent){
+sap.ui.define(["booksample/controller/BaseController"], function (BaseController){
     "use strict";
 
-    return Controller.extend("booksample.controller.SignUp", {
+    const SignUp = BaseController.extend("booksample.controller.SignUp", {
         onSignUpClick(){
-            const router = UIComponent.getRouterFor(this);
+            const router = this.getRouter();
             router.navTo("landingPage");
         }
     });
+
+    return SignUp;
 });
