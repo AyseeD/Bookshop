@@ -11,23 +11,23 @@
                 ariaLabelledBy="signupTitle">
                     <form:toolbar>
                         <Toolbar id="signupToolbar">
-                            <Title id="signupTitle" text="Sign Up"/>
+                            <Title id="signupTitle" text="{i18n>SignUpFormTitle}"/>
                         </Toolbar>
                     </form:toolbar>
 
                     <form:content>
-                        <Label text="User Name" />
+                        <Label text="{i18n>SignUpFormUserNameLabel}" />
                         <Input placeholder="JaneD123" />
-                        <Label text="First and Last Name" />
-                        <Input placeholder="Name"/>
-                        <Input placeholder="Last" />
+                        <Label text="{i18n>SignUpFormFullNameLabel}" />
+                        <Input placeholder="Jane"/>
+                        <Input placeholder="Doe" />
 
-                        <Label text="Password" />
+                        <Label text="{i18n>SignUpFormPasswordLabel}" />
                         <Input placeholder="******"/>
-                        <Input placeholder="****** (Confirm)" />
+                        <Input placeholder="******" />
                     </form:content>
                 </form:SimpleForm>
-                <Button  class="signupButton sapUiResponsiveMargin" text="Sign Up"      accessibleRole="Link" icon="sap-icon://arrow-right" iconFirst="false" press=".onSignUpClick"
+                <Button  class="signupButton sapUiResponsiveMargin" text="{i18n>SignUpFormSubmitButton}"  accessibleRole="Link" icon="sap-icon://arrow-right" iconFirst="false" press=".onSignUpClick"
                 />
         </VBox>
     </FlexBox>
