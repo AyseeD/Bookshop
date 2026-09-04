@@ -99,6 +99,11 @@
                     "pattern": "signup",
                     "name": "signUp",
                     "target": "signUp"
+                },
+                {
+                    "pattern": "bookdetail",
+                    "name": "bookDetail",
+                    "target": "bookDetail"
                 }
             ],
             "targets": {
@@ -109,6 +114,10 @@
                 "signUp":{
                     "id": "signUp",
                     "name": "signUp"
+                },
+                "bookDetail": {
+                    "id": "bookDetail",
+                    "name": "bookDetail"
                 }
             }
         }

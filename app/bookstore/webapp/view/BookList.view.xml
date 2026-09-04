@@ -1,11 +1,16 @@
 <mvc:View
+    controllerName="booksample.controller.BookList"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
     <List class="bookList" items="{/ListOfBooks}">
+        <!--Set type Navigation to make it clickable and add a arrow to show link-->
         <StandardListItem 
             title="{title}"
             description="{author}"
             info="{price} {currency}"
-            icon="{image}"/>
+            icon="{image}"
+            type="Navigation"
+            press=".onBookListPress"
+            />
     </List>
 </mvc:View>

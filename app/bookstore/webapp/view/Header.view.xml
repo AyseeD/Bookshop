@@ -1,5 +1,7 @@
-<core:FragmentDefinition
+<mvc:View
+    controllerName="booksample.controller.Header"
     xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core">
     <FlexBox class="bookHeader" alignItems="Center">
         <HBox class="headerLeft" alignItems="Center">
@@ -44,4 +46,5 @@
             />
         </HBox>
     </FlexBox>
-</core:FragmentDefinition>
+    <core:Fragment fragmentName="booksample.fragment.SideBar" type="XML" />
+</mvc:View>
