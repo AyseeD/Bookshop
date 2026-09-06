@@ -17,8 +17,8 @@ sap.ui.define(["booksample/controller/BaseController", "sap/tnt/NavigationListIt
 
         /**Navigate to the SignUp page */
         onAccountPress(){
-            const router = this.getRouter();
-            router.navTo("signUp");
+            const oRouter = this.getRouter();
+            oRouter.navTo("signUp");
         },
 
         /**

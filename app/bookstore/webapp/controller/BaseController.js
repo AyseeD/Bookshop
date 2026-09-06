@@ -13,10 +13,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/core/UIComponent", "sap/ui/c
          * if no history nav back to landing page
          */
         onNavBack(){
-            const history = History.getInstance();
-            const previousHash = history.getPreviousHash();
+            const oHistory = History.getInstance();
+            const sPreviousHash = oHistory.getPreviousHash();
 
-            if(previousHash !== undefined)
+            if(sPreviousHash !== undefined)
                 window.history.go(-1);
             else
                 this.getRouter().navTo("landingPage", {}, true); //true = make sure hash is replaced
