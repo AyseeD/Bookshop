@@ -176,3 +176,39 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
 .signupButton{
    align-self: flex-end;
 }
+
+/*Book Detail Style*/
+.bookDetailDisplayRight, .bookDetailButtonSection, .bookDetailRatingSection, .bookDetailGenre{
+    gap: 10px;
+}
+
+.bookDetailButtonSection, .bookDetailRatingSection{
+    align-items: center;
+}
+
+.bookDetailDescr{
+    color: rgb(87, 87, 87);
+}
+
+.bookDetailAuthor{
+    font-style: italic;
+}
+
+.bookDetailTitle{
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.bookDetailGenreTitle{
+    font-weight: bold;
+}
+
+.bookDetailAmount{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bookDetailButtonSectionTitle{
+    font-size: 20px;
+    font-weight: bold;
+}

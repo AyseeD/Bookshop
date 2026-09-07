@@ -22,6 +22,7 @@ entity Books : managed {
     price: Price;
     currency: Currency;
     image: String;
+    rating: Double;
 }
 
 entity Genres : cuid, sap.common.CodeList {

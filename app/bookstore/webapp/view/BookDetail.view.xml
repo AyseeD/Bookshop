@@ -5,19 +5,35 @@
     xmlns:core="sap.ui.core">
     <mvc:XMLView viewName="booksample.view.Header" />
 
-    <FlexBox id="bookDetailPage" class="sapUiResponsiveMargin" justifyContent="Center" >
+    <FlexBox id="bookDetailPage" class="sapUiResponsiveMargin" justifyContent="Center" alignItems="Center" >
         <HBox id="bookDetailDisplay">
-            <Image src="{image}" height="500px"/>
+            <Image id="bookDetailDisplayLeft" class="sapUiResponsiveMargin" src="{image}" height="500px"/>
 
-            <VBox>
-                <Title text="{title}" titleStyle="H2" />
-                <Text text="{author}"/>
-                <Text text="{genre}"/>
-                <Text text="{descr}" width="200px" />
-                <Text text="{stock}"/>
-                <Text text="{price}"/>
-                <Text text="{currency}"/>
+            <VBox id="bookDetailDisplayRight" class="bookDetailDisplayRight sapUiResponsiveMargin">
+                <Title class="bookDetailTitle" text="{title}" titleStyle="H2"/>
+                <Text class="bookDetailAuthor" text="{author}"/>
+                
+                <HBox class="bookDetailGenre">
+                    <Text class="bookDetailGenreTitle" text="{i18n>BookDetailGenre}:"></Text>
+                    <Text text="{genre}"/>
+                </HBox>
+
+                <Text class="bookDetailDescr" text="{descr}" width="250px" maxLines="15"/>
+                
+                <HBox class="bookDetailRatingSection">
+                    <RatingIndicator id="bookDetailRating" displayOnly="true" value="{rating}" />
+                    <Label text="{rating} / 5000 {i18n>BookDetailReviews}" labelFor="bookDetailRating"/>
+                </HBox>
+                
+                <Text class="bookDetailAmount" text="{i18n>BookDetailAmount}: {stock}"/>
+                
+                <HBox class="bookDetailButtonSection">
+                    <Text class="bookDetailButtonSectionTitle" text="{price} {currency}"/>
+                     <Button  icon="sap-icon://cart-4" text="{i18n>BookDetailButton}" />
+                </HBox>
             </VBox>
         </HBox>
     </FlexBox>
+
+    <core:Fragment fragmentName="booksample.fragment.Footer" type="XML" />
 </mvc:View>

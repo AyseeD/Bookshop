@@ -30,8 +30,8 @@
             </HBox>
 
             <HBox class="promotionBookRating">
-                <RatingIndicator id="promotionRating" displayOnly="true" maxValue="5" value="4.1" iconSize="24px" /> 
-                <Label text="4.1 / 5000 {i18n>PromotionRating}" labelFor="promotionRating"/>
+                <RatingIndicator id="promotionRating" displayOnly="true" value="{/Books(252)/rating}" iconSize="24px" /> 
+                <Label text="{/Books(252)/rating} / 5000 {i18n>PromotionRating}" labelFor="promotionRating"/>
             </HBox>
 
             <HBox class="promotionPayment">
