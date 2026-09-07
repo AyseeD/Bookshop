@@ -212,3 +212,9 @@ html[dir="rtl"] .myAppBS .myCustomButton.sapMBtn{ /*Right to left*/
     font-size: 20px;
     font-weight: bold;
 }
+
+/*Book Carousel*/
+.bookCarousel{
+    padding: 20px;
+    padding-bottom: 0;
+}
