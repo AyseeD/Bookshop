@@ -1,6 +1,9 @@
 # BOOK STORE
 This is a CAP and SAPUI5 based project, made to present a simple website structure of a book store.
 
+<img width="1728" height="963" alt="Screenshot 2026-09-08 at 16 22 07" src="https://github.com/user-attachments/assets/1a81424e-1cce-4145-879b-648d35150de0" />
+
+## Project Lay out
 It contains these following folders for the project layout:
 
 Folder / File | Purpose
