@@ -1,22 +1,36 @@
-# Getting Started
+# BOOK STORE
+This is a CAP and SAPUI5 based project, made to present a simple website structure of a book store.
 
-Welcome to your new CAP project.
+It contains these following folders for the project layout:
 
-It contains these folders and files, following our recommended project layout:
-
-File or Folder | Purpose
+Folder / File | Purpose
 ---------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`readme.md` | this getting started guide
+`app/` | Contians the ui5 items like view, fragment and controller files and configurations.
+`db/` | Holds the .csv files for local data and has the schema with the entities. 
+`srv/` | Services of the back-end and the business logic is implemented here
+`test/` | Holds .http tests for the services
+`index.cds` | Is the file that provides the book sample model to other projects
+`readme.md` | Holds the information regarding the project.
 
-## Next Steps
+## To Run
+### 1- CAP local server
+First in the root of Booksample/ run the following command and install the node modules:
+```
+npm i
+```
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start with your domain model, in a CDS file in `db/`
+After you can run the following command for starting a local CAP dev server:
+```
+cds watch
+```
 
-## Learn More
+### 2- UI5 front end
+Move from the root of the project into app/bookstore/ folder and run the following command for downloading the necessary node modules:
+```
+npm i
+```
 
-Learn more at <https://cap.cloud.sap>.
+After you can run the following command to start the ui5 local development server:
+```
+npm start
+```
