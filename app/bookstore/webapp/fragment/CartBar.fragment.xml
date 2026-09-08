@@ -4,11 +4,12 @@
     <ResponsivePopover
         id="cartPopover"
         title="Cart"
-        placement="Bottom">
+        placement="Bottom"
+        class="sapUiResponsiveContentPadding">
 
         <List
             id="cartList"
-            items="">
+            items="{/ListOfBooks}">
 
             <CustomListItem>
                 <HBox
@@ -16,16 +17,19 @@
                     justifyContent="SpaceBetween"
                     width="100%">
 
-                    <VBox>
-                        <Text text="" />
-                        <Text text="" />
-                    </VBox>
+                    <HBox >
+                        <Image src="{image}" width="50px"/>
+                        <VBox>
+                            <Text text="{title}" />
+                            <Text text="{author}" />
+                        </VBox>
+                    </HBox>
 
                     <HBox alignItems="Center">
                         <Button
                             icon="sap-icon://less"
                             press=".onDecreaseQuantity"
-                            type="Transparent" />
+                            type="Negative" />
 
                         <Text
                             text=""
