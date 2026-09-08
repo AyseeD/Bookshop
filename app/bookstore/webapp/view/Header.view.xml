@@ -43,8 +43,10 @@
             <Button 
                 id="headerCartButton"
                 icon="sap-icon://cart"
+                press=".onCartPress"
             />
         </HBox>
     </FlexBox>
     <core:Fragment fragmentName="booksample.fragment.SideBar" type="XML" />
+    <core:Fragment fragmentName="booksample.fragment.CartBar" type="XML" />
 </mvc:View>

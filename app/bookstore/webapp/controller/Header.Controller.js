@@ -88,6 +88,12 @@ sap.ui.define(["booksample/controller/BaseController", "sap/tnt/NavigationListIt
             aRootGenres.forEach(function (oGenre){
                 oNavList.addItem(createGenreItem(oGenre));
             }.bind(this));
+        },
+
+        /**Open Cart Popover */
+        onCartPress(oEvent){
+            const oCartPopOver = this.byId("cartPopover");
+            oCartPopOver.openBy(oEvent.getSource());
         }
     });
 
